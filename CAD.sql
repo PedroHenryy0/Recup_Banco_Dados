@@ -1,17 +1,15 @@
 
-CREATE TABLE alunos (
+CREATE TABLE alunos ( -- FEITO
 alunos_id INT PRIMARY KEY,
 alunoname TEXT,
 idade INT);
 
-CREATE TABLE disciplinas (
+CREATE TABLE disciplinas ( -- FEITO
 disciplinas_id INT PRIMARY KEY,
-matematica TEXT,
-historia TEXT,
-musica TEXT
+nomemateria TEXT
 );
 
-CREATE TABLE alunoFS (
+CREATE TABLE alunoFS ( -- FEITO
 alunoFS_id INT PRIMARY KEY,
 alunonome TEXT,
 idade INT
@@ -27,7 +25,7 @@ FOREIGN KEY(disciplinas_id) REFERENCES disciplinas (disciplinas_id),
 FOREIGN KEY (alunoFS_id) REFERENCES alunoFS (alunoFS_id)
 );
 
-CREATE TABLE professor (
+CREATE TABLE professor ( -- FEITO
 professor_id INT PRIMARY KEY,
 profenome TEXT
 );
